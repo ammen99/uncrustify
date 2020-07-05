@@ -3134,7 +3134,7 @@ void indent_text(void)
                  || chunk_is_newline(chunk_get_prev(pc)))
          {
             log_rule_B("indent_var_def_cont");
-            vardefcol = frm.top().indent + indent_size;
+            vardefcol = frm.top().indent_tab + indent_size;
          }
          else
          {
